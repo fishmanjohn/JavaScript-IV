@@ -69,6 +69,17 @@ const fred = new Instructor({
     catchPhrase: `Don't forget the homies`
   });
 
+  const brit = new Instructor({
+    name: 'Brit',
+    location: 'Canada',
+    age: "it impolite to ask a woman her age",
+    favLanguage: 'Less',
+    specialty: 'Front-end',
+    catchPhrase: `All dressed chips and my bali dog are all I need.`
+  });
+
+
+
 const tommy = new  ProjectManager(
   {name: "Tommy", 
   location: "somewhere",
@@ -79,6 +90,17 @@ catchPhrase: "What's sleep?",
 gradClassName: "Web21",
 faveInstructor: "Luis" });
 
+const chris = new ProjectManager(
+    {name: "Chris", 
+    location: "Sarasoda",
+    age: "guess",
+   specialty: "React",
+   favLanguage: "JavaScript" ,
+  catchPhrase: "Come on in.",
+  gradClassName: "web22",
+  faveInstructor: "Dan"
+})
+
 const john = new Student({
     name: "John",
     location: "In my van in the woods.",
@@ -86,14 +108,23 @@ const john = new Student({
     peviousBackground: "Mountain-bike Technician",
     className: "web25",
     favSubjects: ["HTML","CSS","Color therory","Surfboard Design"]
-})
+});
 
 const bob = new Student({
     name: "Bob",
-    location: "Nambia",
+    location: "Namibia",
     age: "as old as time itself",
     peviousBackground: "sand bottom point sweeper",
     className: "",
     favSubjects: ["HTML","CSS","Color therory","Surfboard Design"]
 
-})
+});
+
+
+console.log(john.location);
+console.log (bob.listsSubjects())
+console.log(chris.debugsCode(john,"JS"))
+console.log(brit.grade(bob,"dopenes"))
+console.log(fred.catchPhrase)
+console.log(bob.location)
+console.log(john.listsSubjects())
